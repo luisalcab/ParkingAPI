@@ -99,21 +99,7 @@ app.get("/api/v1/parking/price", (req, res) => {
 });
 
 // Version 2
-
-// Post to get the parking place to park
-// POST /api/v2/parking/checkin
-// Body: { "checkin": { "parking_lot_id": "P001", "car_type": 0 } }
-// Car type: 0 - chico, 1 - grande, 2 - discapacitados
-app.post("/api/v2/parking/checkin", (req, res) => {
-  const parking_lot_id = req.body.checkin.parking_lot_id || null;
-  const car_type = req.body.checkin.car_type || null;
-
-  if (parking_lot_id === null || car_type === null) {
-    res.send("No se especificó el tipo de vehículo o el lugar de estacionamiento");
-  } else {
-    res.send(`El vehículo de tipo ${car_type} se estacionó en el lugar ${parking_lot_id}`);
-  }
-});
+// Developing...
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);

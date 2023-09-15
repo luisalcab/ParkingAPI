@@ -20,7 +20,7 @@ let parking_places = Array(30).fill(0);
 // Version 1
 
 // Get spaces on parking lot
-// GET /api/parking?car_type=1
+// GET /api/v1/parking?car_type=1
 // 0 - chico, 1 - grande, 2 - discapacitados
 app.get("/api/v1/parking", (req, res) => {
   let car_type = req.query.car_type.toString() || null;
@@ -81,7 +81,7 @@ app.get("/api/v1/parking", (req, res) => {
 });
 
 // Get final price for parking
-// GET /api/parking/price?minutes=120
+// GET /api/v1/parking/price?minutes=120
 app.get("/api/v1/parking/price", (req, res) => {
   const minutes = parseInt(req.query.minutes) || null;
   if (minutes === null) {

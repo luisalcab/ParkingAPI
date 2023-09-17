@@ -10,7 +10,7 @@ API para el manejo de un estacionamiento inteligente. Incluye dos endpoints para
 * **GET /api/v1/parking/price?minutes=120** - Regresa el precio a pagar por el tiempo de estancia en el estacionamiento. El parámetro minutes es el tiempo de estancia en el estacionamiento en minutos. Si el tiempo de estancia es menor o igual a 59 minutos, el precio es de $0. Si el tiempo de estancia es mayor a 59 minutos, el precio es de $15 por cada hora. 
 
 ## Instalación
-Primero se debe instalar NodeJS y NPM. Para instalar Node JS y NPM en Windows, se debe descargar el instalador de la página oficial de Node JS: https://nodejs.org/es/download/. Para instalar Node JS y NPM en Linux, se debe ejecutar el siguiente comando en la terminal: 
+Primero se debe instalar NodeJS y NPM. Para instalar Node JS y NPM en Windows, se debe descargar el instalador de la página oficial de Node JS: https://nodejs.org/en. Para instalar Node JS y NPM en Linux, se debe ejecutar el siguiente comando en la terminal: 
 ```
 sudo apt install nodejs npm
 ```

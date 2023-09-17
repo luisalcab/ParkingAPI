@@ -23,10 +23,6 @@ Para verificar que Node JS y NPM se hayan instalado correctamente, se debe ejecu
 node -v
 npm -v
 ```
-Para instalar las dependencias del proyecto, se debe ejecutar el siguiente comando en la terminal: 
-```
-npm install
-```
 Para correr el proyecto, primero se debe instalar Express. Para instalar Express, se debe ejecutar el siguiente comando en la terminal: 
 ```
 npm install express

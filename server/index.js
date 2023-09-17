@@ -23,8 +23,14 @@ let parking_places = Array(30).fill(0);
 // GET /api/v1/parking?car_type=1
 // 0 - chico, 1 - grande, 2 - discapacitados
 app.get("/api/v1/parking", (req, res) => {
-  let car_type = req.query.car_type.toString() || null;
-  car_type = Number(car_type);
+
+  if (req.query.car_type === undefined) {
+    var car_type = null;
+  }else {
+    car_type = req.query.car_type.toString();
+    car_type = Number(car_type);
+  }
+
   let assigned_place = false;
 
   switch (car_type) {
